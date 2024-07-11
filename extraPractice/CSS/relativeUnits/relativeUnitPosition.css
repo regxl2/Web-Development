@@ -1,0 +1,53 @@
+/* Properties of Position :-*/
+/* 1. static - default position (THe top, right, bottom, left, and z-index property have no effect)*/
+/* 2. relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)*/
+/* 3. absolute - positioned relative to its closest positioned ancestor (removed from the flow).*/
+/* 4. fixed - positioned relative to browser (removed from flow).*/
+/* 5. sticky - positioned based on user's scroll position.*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: #1bbcfa;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    position: static;
+    top:100px;
+    left: 100px;
+    /*by making its position static it will have no effect on the position by applying*/
+    /*top and left property*/
+}
+
+#box2{
+    position: relative;
+    top:10px;
+    left: 10px;
+    /*left and top will affect relative to the box initial position*/
+}
+
+#box3{
+    position:absolute;
+    top:10px;
+    left:20px;
+    /*it will be positioned according to the closest positioned ancestor, for example*/
+    /*if the element tag has multiple ancestor then closest positioned ancestor*/
+}
+#box4{
+    position:fixed;
+    height:20px;
+    top:0;
+    left:0;
+    width: 100vw
+    /*It will be positioned relative to the browser. For example, Navigation Bar of the */
+    /*webpage are used to position at the top of the page by using this property.
+    while scrolling you can see it will remain at the top*/
+}
+
+#box5{
+    position: sticky;
+    top:0;
+    /*by making box5 position sticky and top equal to zero. As*/
+    /*box5 will reach the top the browser, it will stick to the top of the browser.*/
+}

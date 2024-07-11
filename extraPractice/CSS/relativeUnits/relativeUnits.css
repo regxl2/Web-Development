@@ -1,0 +1,64 @@
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: #1bbcfa;
+}
+#box2{
+    /*By using percentage as a unit in height and width.*/
+    /*It will set the size as relative to an element's parent object.*/
+    height: 50%;
+    width: 50%;
+    /*since box1 is the parent of box2 and height and width of box1 is 200px,*/
+    /*therefore by setting height and width equal to 50% height and width of */
+    /*box2 will be 100px.*/
+
+    margin:0 25% 0 25%;
+    /*margin wil be 50px because parent width and height is 200px*/
+    background-color: rgb(255, 0, 0);
+}
+
+
+/*em is relative font-size unit in css and is similar to percentage and if u use
+use em for setting width and height then the size of width and height wil be relative to the current
+element itself.*/
+/*In simple words, if we are using font-size with em then font-size of the */
+/*current element will depend on the font size of the parent, but if are*/
+/*using em for height and width then height and width will depend on the font*/
+/*size of the current element itself.*/
+#box3{
+    height: 200px;
+    width: 200px;
+    font-size: 50px;
+    background-color: #1bbcfa;
+}
+#box4{
+    /*since the font size of the parent box3 is 50px then by setting the*/
+    /*font-size of box4 equal to 0.5em then actual font-size in px will 25px*/
+    font-size: 0.5em;
+    height:4em;
+    width:4em;
+    /*since, the font size of the this box is 25px then height and width both */
+    /*will 4em which is equal to 100px*/
+    background-color: red;
+}
+
+/*rem is the relative unit which sets the size of element according to the */
+/*font-size of the root element*/
+#box5{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    /*since root element text font-size is by default 16px. Therefore by using rem for*/
+    /*height and width will be 80px and font-size of current element 32px.*/
+    background-color: #1bbcfa;
+}
+
+/*vh is the relative unit which is relative the height of view port (height of the browser)*/
+/*vw is the relative unit which is relative the width of view port (width of the browser)*/
+#box6{
+    height: 50vh;
+    width: 50vw;
+    /*Height will occupy the half of the height of the viewport*/
+    /*width will occupy the half of the width of the viewport*/
+    background-color: #1bbcfa;
+}

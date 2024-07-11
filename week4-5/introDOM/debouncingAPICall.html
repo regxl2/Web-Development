@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debouncing</title>
+</head>
+<body>
+<!--Here, we are assuming adding two numbers is a heavy operation. -->
+<!--Therefore, we are requesting to add two numbers on the backend server.-->
+<label for="input1">
+    <input oninput="debouncing()" id="input1" type="number" value="0"><br><br>
+</label>
+<label for="input2">
+    <input oninput="debouncing()" id="input2" type="number" value="0"><br><br>
+</label>
+<!--On using oninput everytime the input changes the api call is fired, then we want to limit the -->
+<!--rate of calling api call after sometime when the user has completed writing the number. For example,-->
+<!--if bought an api key where can call 6000 api calls per month but without limiting the limit the rate of -->
+<!--calling api. You will exhaust your plan in very less time.-->
+<p id="para"></p>
+<script>
+    let timeout;
+    function debouncing(){
+        clearTimeout(timeout)
+        timeout = setTimeout(()=>{
+            addTwoNumbers()
+        },1000)
+        // this debouncing function will call addTwoNumbers() function
+        // after 1 seconds when the user has completed writing
+    }
+    async function addTwoNumbers(){
+        const num1 = document.getElementById("input1").value
+        const num2 = document.getElementById("input2").value
+        const response = await fetch(`http://localhost:3000/sum?a=${num1}&b=${num2}`)
+        document.getElementById("para").innerHTML = await response.text()
+    }
+</script>
+</body>
+</html>

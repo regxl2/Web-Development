@@ -1,0 +1,80 @@
+/*As, we know div is by default block element. It means it will occupy the
+ whole width, but by using display property and setting display value to
+inline will make it inline element. It means it will only occupy the space it needed.*/
+#div1{
+    display:inline;
+}
+
+/*As we know the button is by default inline element, it means it will only occupy the space it */
+/*needed, but by setting its display to block . It will occupy the whole width and it will now*/
+/*act as a block element.*/
+#button1{
+    display: block;
+}
+
+/*one of the drawback of the making element inline,
+ then top and bottom margin/padding will not work.*/
+.box1{
+    height: 100px;
+    width: 100px;
+    display: inline;
+    margin:25px;
+    padding: 25px;
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: green;
+}
+#box3{
+    background-color: red;
+}
+
+/*drawback of making block inline is solved in block-inline.*/
+/*inline-block is similar to inline but we can set margin & padding to*/
+/*top and bottom also.*/
+.box2{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin:25px;
+    padding: 25px;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: green;
+}
+#box6{
+    background-color: red;
+}
+
+/*By making the element's display to none makes the element disappear from*/
+/*the screeen and it will not even occupy any space in the screen*/
+#box7{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: none;
+}
+
+/*By making the element's visibility value to hidden makes the element disappear from*/
+/*the screen, but it will occupy the space in the screen.*/
+#box8{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    visibility: hidden;
+}
+
+/*In rgba stands for red, green, blue and alpha.
+Alpha value is used to control the opacity of the color.
+If value is 0 then color will be totally transparent and if value is 1
+then color will be totally opaque*/
+#box9{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 0, 0, 0.4);
+}

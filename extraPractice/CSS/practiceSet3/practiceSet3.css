@@ -1,0 +1,18 @@
+div{
+    text-align: center;
+    height: 60px;
+    background-color: #1f1f1f;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+#amazon{
+    font-size: 25px;
+    color: #734c04;
+}
+#search{
+    background-color: #b9961c;
+    color: white;
+}

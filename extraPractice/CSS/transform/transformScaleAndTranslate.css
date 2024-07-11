@@ -1,0 +1,31 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: all 1s ease-out 100ms;
+}
+
+#box1:hover{
+    transform: scale(0.5) translate(100px);
+    /*Scale will scale the width and height 0.5 times*/
+    /*Translate will move the element by 100px on the x axia*/
+}
+#box2:hover{
+    transform: scale(1.1) translate(20px, 20px);
+    /*Scale will scale the width and height 1.1 times*/
+    /*Translate will move the element by 20px on the x axis and y axis*/
+}
+#box3:hover{
+    margin: 100px;
+    transform: scale(2, 1) skew(-30deg);
+    /*Transform will scale the width by 2 times and scale the height by 1 times*/
+    /*Skew will skew the element by 30 degree*/
+}
+#box4{
+    transform: scaleX(0.5);
+    /*It will scale the width by 0.5 times*/
+}
+#box5{
+    transform: scaleY(0.5);
+    /*It will scale the height by 0.5 times*/
+}

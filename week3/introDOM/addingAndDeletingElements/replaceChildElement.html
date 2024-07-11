@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replace Child Element</title>
+</head>
+<body>
+<h1>Replacing the child element using replaceChild() method</h1>
+<div id = "box">
+    <p> Hello world from Regxl.</p>
+    <p id = "para"> This paragraph is going to be replaced by another paragraph
+        by clicking the replace button.
+    </p>
+</div>
+<button onclick=replaceChildElement()>replace</button>
+<script>
+    function replaceChildElement(){
+        const parent = document.getElementById("box")
+        const oldChild = document.getElementById("para")
+        const newChild = document.createElement("p")
+        newChild.innerHTML = "Hello, i am the new replaced paragraph"
+        parent.replaceChild(newChild, oldChild)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Listener tutorial</title>
+</head>
+<body>
+<h1>It is a tutorial of click listener by using addEventListener() method</h1>
+<h2>Click on the box to change its color from red to blue</h2>
+<div id="box" style="background-color: red; height:300px; width: 300px"></div>
+<script>
+    const box= document.getElementById("box")
+    box.addEventListener("click", myFunction)
+    function myFunction(){
+        box.style.backgroundColor= "blue"
+    }
+</script>
+</body>
+</html>

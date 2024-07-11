@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // this tells us what type of database we are using. If we want to use mongodb we can replace with postgresql with mongodb
+  // also the url of the postgresql url with mongodb url.
+
+  provider = "postgresql"
+  // url      = env("DATABASE_URL")
+  url = "postgresql://rathourabhishekvk4:dtVhuG49DyPe@ep-withered-shadow-a1q0nrwe.ap-southeast-1.aws.neon.tech/postgresTest?sslmode=require"
+}
+
+//defining the structure of the tables
+
+model User{
+  // in prisma if the insertion fails then also id value will be incremented.
+  id Int @id @default(autoincrement())
+  email String @unique
+  firstName String
+  lastName String
+  password String
+}
+
+model Todo{
+  id Int @id @default(autoincrement())
+  title String
+  done Boolean @default(false)
+  description String?
+  userId Int
+}

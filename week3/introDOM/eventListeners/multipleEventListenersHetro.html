@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Event Listeners</title>
+</head>
+<body>
+<h1>This is a tutorial, how to add multiple different types of eventListeners</h1>
+<h2>Try to click, hover over and hover out of the button</h2>
+<button id="button">Try</button>
+<p id="para"></p>
+<script>
+    let text =""
+    const button  = document.getElementById("button")
+    const para = document.getElementById("para")
+    button.addEventListener("click", ()=>{
+        text +="Clicked!<br>"
+        para.innerHTML= text
+    })
+    button.addEventListener("mouseover", ()=> {
+        text += "Moused Over!<br>"
+        para.innerHTML = text
+    })
+    button.addEventListener("mouseout", ()=>{
+        text += "Mouse out<br>"
+        para.innerHTML = text
+    })
+</script>
+</body>
+</html>

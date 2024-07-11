@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Addition of two numbers</title>
+</head>
+<body>
+<label for="input1">
+    <input id="input1" type="number" value="0"><br><br>
+</label>
+<label for="input2">
+    <input id="input2" type="number" value="0"><br><br>
+</label>
+<button onclick="addTwoNumbers()">Sum</button><br><br>
+<p id="para"></p>
+<script>
+    function addTwoNumbers(){
+        const num1 = parseInt(document.getElementById("input1").value)
+        const num2 = parseInt(document.getElementById("input2").value)
+        const sum = num1+num2
+        document.getElementById("para").innerHTML = sum.toString()
+    }
+</script>
+</body>
+</html>

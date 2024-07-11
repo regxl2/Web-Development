@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic HTML content using document.write</title>
+</head>
+<body>
+<p>Hello world from regxl</p>
+<!--document.write(): write directly to the HTML output stream.-->
+<!--Never use document.write() after the document is loaded. It will overwrite the document.-->
+<!--positon of document.write() matters where you write-->
+<script>
+    document.write(Date())
+</script>
+<p>Hello world from regxl</p>
+<script>
+    document.write(Date())
+</script>
+<p>Hello world from regxl</p>
+</body>
+</html>

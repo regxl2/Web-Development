@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onmouse Event</title>
+</head>
+<body>
+<h1>Javascript HTML Events</h1>
+<h2>The onmouseover Attribute</h2>
+<div onmouseover = "mOver(this)" onmouseout="mOut(this)"
+     style="background-color: #387ed1; width: 300px; height: 300px;">
+    Mouse Over Me
+</div>
+<script>
+    function mOver(context){
+        context.innerHTML = "Thank You"
+    }
+    function mOut(context){
+        context.innerHTML = "Mouse Over Me"
+    }
+</script>
+</body>
+</html>

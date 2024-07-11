@@ -1,0 +1,10 @@
+.heading{
+    color: red;
+}
+
+/*If you want multiple element should have same properties then */
+/*you can do it by using commas and all elements name*/
+
+/*h1, h2, h3{*/
+/*    color: red;*/
+/*}*/

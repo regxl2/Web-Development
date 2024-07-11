@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Element</title>
+</head>
+<body>
+<div id="box" style = "padding: 16px; background-color: lightgray">
+    <h1>Creating an element using createElement() method</h1>
+</div>
+<button onClick = createPara()>Click Me!</button>
+<script>
+    function createPara(){
+        const para = document.createElement("p")
+        para.innerHTML = "This paragraph is added"
+        document.getElementById("box").appendChild(para)
+    }
+</script>
+</body>
+</html>

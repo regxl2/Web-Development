@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<body>
+<!--this is paragraph tag-->
+<p>Portfolio</p>
+
+<!--These are heading tags-->
+<h1>Heading1</h1>
+<h2>Heading2</h2>
+<h3>Heading3</h3>
+<h4>Heading4</h4>
+<h5>Heading5</h5>
+<h6>Heading6</h6>
+<!--Always use the appropriate tag for which it is assigned don't-->
+<!--try to use it, for example, Don't use heading tag for increasing-->
+<!--the font of the text. Because using the appropriate tag will help-->
+<!--in the search engine optimization of the website-->
+
+<!--This use for linking another page in the page-->
+<!--This link inside the href attribute is absolute link-->
+<a href="https://www.google.com">Google</a>
+
+<!--This tag is for breaking the line(New Line)-->
+<br/>
+<!--This link inside the href attribute is relative link-->
+<a href="hello.html">Go to Hello</a>
+<hr/>
+
+<!--If we want to open the link in another tab -->
+<a href="hello.html" target="_main">Go to Hello in another tab</a>
+
+<!--This tag is used for displaying image-->
+<!--This alt attribute is used display the text about the image, if an image link in-->
+<!--the src attribute is incorrect or due to internet connection image is not able -->
+<!--to load, then alt attribute value will be displayed.-->
+<img src="https://img.freepik.com/free-photo/notebook_74190-2725.jpg?w=900&t=st=1703925850~exp=1703926450~hmac=477794ea58a3bafb282dede29b806827474d71098733177beba940ed4fd034b4"
+     , alt="Notebook">
+
+<!--this tag is used for making text bold -->
+<b>Bold</b>
+<br/>
+
+<!--This tag is used for making text italic-->
+<i>Italic</i>
+<br/>
+
+<!--This tag is used for making text underlined-->
+<u>Underlined</u>
+
+<br/>
+
+<!--Usage of bold, italic and underlined inside paragraph tag-->
+<p>
+    <u><i><b>Lorem ipsum dolor sit amet</b></i></u>, consectetur adipiscing elit.
+    Sed hendrerit odio non quam dictum, sit amet aliquam eros luctus.
+    Ut fringilla justo nec <b>odio cursus</b>, ut fermentum elit laoreet.
+    Vestibulum dapibus quam vel <u>nisi tincidunt</u>, nec cursus <i>ex posuere</i>.
+</p>
+<br/>
+
+<big>This tag is used to display big text.</big>
+<br/>
+
+<!--This tag is adding horizontal ruler on the page-->
+<hr/>
+
+<small>This tag is used to display small text.</small>
+<br/>
+
+<!--This tag can be used to chemistry formula name-->
+<p>H<sub>2</sub>O</p>
+<hr/>
+
+<!--This tag is used to add power to notation-->
+<p>A<sup>2</sup>+B</p>
+<hr/>
+
+<!--As we know in the paragraph tag if we include extra spaces then also extra spaces-->
+<!--are not counted, but if you want to include extra spaces in the paragraph then use-->
+<!--pre-tag instead of paragarph-->
+<pre>
+    <p>
+        <u><i><b>Lorem ipsum dolor sit amet</b></i></u>, consectetur adipiscing elit.
+    Sed hendrerit             odio non quam dictum, sit amet aliquam eros luctus.
+    Ut fringilla justo nec <b>odio cursus</b>, ut fermentum elit laoreet.
+    Vestibulum dapibus quam vel <u>nisi tincidunt</u>, nec cursus <i>ex posuere</i>.
+    </p>
+</pre>
+<hr/>
+
+<!--How to combine image and link tag in the page to make an image link clickable-->
+<a href="https://www.google.com" target="_main"><img
+        src="https://community.appinventor.mit.edu/uploads/default/original/3X/1/b/1b90aa3413517f1c91a82985aa3523fd8671a5d7.png"
+        alt="google" height=100></a>
+
+<hr/>
+
+<!--Div is a container used for other HTML elements-->
+<!--Div is block element means always takes full width, it means,-->
+<!--it will not take the space it needed, but it will always take the full width of the page-->
+<div>
+    <p>Hello world</p>
+    <p>Welcome</p>
+    <p>Namaste</p>
+</div>
+<hr/>
+
+<!--Span is also a container used for other HTML elements-->
+<!--Span is an Inline element (takes width as per size)-->
+<span>hello world</span>
+<hr/>
+
+<!--List in the HTML. There are two types of list: ordered and unordered-->
+<ol>
+    <li>
+        Blue
+        <ul>
+            <li>Cyan blue</li>
+            <li>Sky blue</li>
+        </ul>
+    </li>
+    <li>
+        Red
+        <ul>
+            <li>Pink red</li>
+            <li>Blood red</li>
+        </ul>
+    </li>
+</ol>
+<hr/>
+
+
+<!--Tables in HTML-->
+<!--caption tag is used for table title-->
+<!--thead is used to wrap table head-->
+<!--tbody is used to wrap table body-->
+<!--tr tag is used for defining table row-->
+<!--th tag is used for table header-->
+<!--td tag is used for filling the table details-->
+<table>
+    <caption> Student Data</caption>
+    <thead>
+    <tr>
+        <!--colspan attribute is used to define how many columns will come under its th tag-->
+        <th colspan="1">Name</th>
+        <th>RollNo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Abhishek</td>
+        <td>205122003</td>
+    </tr>
+    <tr>
+        <td>Gaurav</td>
+        <td>205122026</td>
+    </tr>
+    <tr>
+        <td>Piyush</td>
+        <td>205122061</td>
+    </tr>
+    </tbody>
+</table>
+
+<!--id attribute is used for uniquely identifying the HTML element -->
+<!--class attribute is used for grouping the different HTML elements. This-->
+<!--grouping helps in those cases — for example, we want elements belonging to-->
+<!--the same group should have same color. So, easily we can style those elements-->
+<!--at one place.-->
+<style>
+    .group1 {
+        background: aqua;
+    }
+</style>
+<div id="id1" class="group1">
+    <p>Hello world from group1</p>
+</div>
+<div id="id2" class="group1">
+    <p>Hello world from group2</p>
+</div>
+
+<!--iframe tag is used to show website inside website-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eZ9q4dtu7o8?si=63DsFc1_O60SbSXa"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+<br>
+<br>
+
+<!--for showing video in the website use video tag-->
+<video src="https://youtu.be/pge4IvwQFA8?si=UbO1zP3XCtybJZez" controls>My Video</video>
+</body>
+</html>

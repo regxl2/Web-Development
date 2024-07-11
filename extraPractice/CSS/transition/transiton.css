@@ -1,0 +1,34 @@
+/*Transitions :- It enables you to define the transition betweeen two states*/
+/*of an element*/
+/*1. transition-property: property you want to transtion (font-size, width etc.)*/
+/*2. transition-duration: 2s/4ms*/
+/*3. transition-timing-function: ease-in/ ease-out/ linear/ steps*/
+/*4. transition-delay: 2s/4ms*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    /*transition: all;*/
+    /*transition-duration: 1s;*/
+    /*transition-timing-function: ease-in;*/
+    /*transition-delay: 100ms;*/
+
+    /*transition shorthand*/
+    transition: all 1s ease-in 100ms;
+}
+
+/*hover for mouse cursor over the item*/
+div:hover{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+/*active for click and hold */
+div:active{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}

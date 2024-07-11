@@ -1,0 +1,22 @@
+# Side Effect: -
+In React, the concept of side effects causes to take place in any operation
+that reaches outside the scope of a React component. These operations can effect
+the other components, interact with the browser, or perform asynchronous fetching
+the data. Example of these operations are: -
+1. setTimeout
+2. fetch
+3. setInterval
+4. document.getElementById("").innerHTML = ""
+
+# Hooks: -
+Hooks are a feature introduced in React 16.8 that allow you to use state and other
+React features without writing a class. They enable functional components to have access
+to stateful logic and lifecycle features, which were previously only possible in class
+components. This has led to a more concise and readable way of writing components in React.
+Some common hooks are
+1. useState
+2. useEffect
+3. useCallback
+4. useMemo
+5. useRef
+6. useContext

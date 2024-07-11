@@ -1,0 +1,33 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+@media (width: 600px) {
+    div{
+        background-color: gray;
+    }
+    /*when screen width will be 600px then background color will be gray*/
+}
+
+@media (min-width: 601px){
+    div{
+        background-color: red;
+    }
+    /* when screen width will be at least 601px then background color will be red*/
+}
+
+@media (max-width: 599px) {
+    div{
+        background-color: blue;
+    }
+    /*when screen width will be less than and equal to 599px then background color will be blue*/
+}
+
+@media(min-width: 200px) and (max-width: 300px){
+    div{
+        background-color: green;
+    }
+    /*when screen width is in the range of 200px and 300px then background color will be green*/
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siblings Nodes</title>
+</head>
+<body>
+<div class = "list">
+    <h2 class="title"></h2>
+    <ul class="items">
+        <li class = "item">Item 1</li>
+        <li class = "item">Item 2</li>
+        <li class = "item">Item 3</li>
+    </ul>
+    <p>Hello world</p>
+</div>
+<script type="text/javascript">
+    const parentNode = document.querySelector(".items")
+    //childNode
+    console.log(parentNode.children[1])
+    //previous sibling Node
+    console.log(parentNode.previousElementSibling)
+    //next sibling Node
+    console.log(parentNode.nextElementSibling)
+    //parent Node
+    console.log(parentNode.parentElement)
+</script>
+</body>
+</html>

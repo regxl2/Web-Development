@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contentBox{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+footer{
+    height:100px;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+a{
+    color:white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+main{
+    height:550px;
+    text-align: center;
+}
+#navBar{
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    background-color: #1f1f1f;
+}
+#logo{
+    color: #b9961c;
+    font-size:25px;
+}
+#searchButton{
+    color: white;
+    background-color: #b9961c;
+}
+#div1{
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px solid black;
+}
+#div2{
+    background-color: rgba(0, 255, 0, 0.5);
+    border: 2px solid black;
+}
+#div3{
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 2px solid black;
+}

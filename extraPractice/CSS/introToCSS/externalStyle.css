@@ -1,0 +1,25 @@
+/*Asterisk sign is used as universal selector for styling every element in the HTML document.*/
+*{
+    color: #b9961c;
+}
+
+/*element name is used as element selector for styling every element related to same tag*/
+body{
+    background-color: seashell;
+}
+
+/*using id name for styling element is called id selector*/
+#firstHeading{
+    background-color: #424242;
+}
+
+/*using class name for styling element is called class selector*/
+.exceptHeading1{
+    background-color: #387ed1;
+}
+
+/*text align: right will align text towards right*/
+p{
+    text-align: right;
+}
+

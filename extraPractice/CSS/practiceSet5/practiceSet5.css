@@ -1,0 +1,10 @@
+div{
+    position: fixed;
+    height:200px;
+    width: 200px;
+    background-image: url("neom.jpg");
+    background-size: cover;
+    z-index: 1;
+    right:0;
+    bottom:0;
+}

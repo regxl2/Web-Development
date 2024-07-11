@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+</head>
+<body>
+<div>Hello world by regxl</div>
+<p>Hello world by regxl</p>
+<div>
+    <p>Hello world by regxl</p>
+    <p>Hello world by regxl</p>
+    <p>Hello world by regxl</p>
+    <p>Hello world by regxl</p>
+</div>
+<script>
+    // div>p means all the paragraph whose parent is div tag
+    const paragraphInsideDiv = document.querySelectorAll("div>p")
+    paragraphInsideDiv.forEach(paragraph => paragraph.style.backgroundColor = "red")
+
+    //It will select the first element in the tag who is paragraph and inside div
+    const firstParagraphInsideDiv = document.querySelector("div>p")
+    firstParagraphInsideDiv.style.backgroundColor = "blue"
+</script>
+</body>
+</html>

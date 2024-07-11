@@ -1,0 +1,36 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    background-color: #1bbcfa;
+    background-image: url("neom.jpg");
+    background-size: cover;
+    /*if background-size value is cover, then it will make sure*/
+    /*it will cover whole space given with the image.*/
+}
+#box2{
+    background-color: #b9961c;
+    background-image: url("neom.jpg");
+    background-size: contain;
+    /*if background-size value is contain, then it will make sure*/
+    /*that whole image with aspect ratio will fit in the space and*/
+    /*image repeat to fill the space.*/
+}
+#box3{
+    background-color: lime;
+    background-image: url("neom.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*if background-repeat value is set to no-repeat, then it will*/
+    /*not repeat the image to fill in the space.*/
+}
+#box4{
+    background-color: antiquewhite;
+    background-image: url("neom.jpg");
+    background-size: auto;
+    /*if we set the background-size to auto then it will be decided by the */
+    /*system how to place the image in the given space.*/
+}

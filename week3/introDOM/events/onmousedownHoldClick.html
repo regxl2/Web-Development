@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onmousedown and on mouseup tutorial</title>
+</head>
+<body>
+<div onmousedown="mDown(this)" onmouseup="mUp((this))"
+     style="background-color: Blue; height: 300px; width: 300px">
+  Click Me!
+</div>
+<script>
+  function mDown(context){
+    context.style.backgroundColor = "Red"
+    context.innerHTML = "Thank You"
+  }
+  function mUp(context){
+    context.style.backgroundColor = "Blue"
+    context.innerHTML = "Click Me!"
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Element</title>
+</head>
+<body>
+<h1>Remove an element from the HTML document using remove() method</h1>
+<p id="para">This paragraph is going to be removed by clicking the remove button.</p>
+<button onclick= removeElement()>Remove</button>
+<script>
+    function removeElement(){
+        const para = document.getElementById("para")
+        para.remove()
+    }
+</script>
+</body>
+</html>

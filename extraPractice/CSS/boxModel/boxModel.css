@@ -1,0 +1,52 @@
+h1{
+    height:200px;
+    width:200px;
+    background-color: #1bbcfa;
+    /*text-align property will align the text according to the space allowed to it but not to
+    according to the document.*/
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+/*border consist of three properties: border-style, border-width and border-color*/
+p{
+    height:500px;
+    width: 500px;
+    background-color: #1bbcfa;
+
+    /*border property shorthand */
+    border: 2px solid black;
+}
+
+div{
+    height:100px;
+    width:100px;
+    background-color: #1bbcfa;
+    border: 2px solid blueviolet;
+
+    /*border-radius property is used to round the corners of an element's outer border edge.*/
+    /*We can also percentage to set the border-radius*/
+    border-radius: 10px;
+
+    /*padding is the area between content and border*/
+    /*if you want to give padding values same to top, right, bottom and left of an element then , use format: {padding: 10px}*/
+    /*if you want to give different values to top right, bottom and left then, use format: {padding: 1px 2px 3px 4px}*/
+    /*if you want only one direction to be changed then use format: {padding-top: 10px}*/
+    padding: 10px 20px 10px 20px;
+
+    /*margin is area outside the border. If format using margin is same as padding*/
+    margin: 25px;
+}
+
+/*if you want to make circle of the element then, make height and width of the element*/
+/*equal and set its border-radius to 50%*/
+#circle{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: #1bbcfa;
+    border: 2px solid black;
+    border-radius: 50%;
+}

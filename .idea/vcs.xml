@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/medium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week14/intro-to-next" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week14/nextjs-backend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week15/learn-bind-mount" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week15/week-15-live-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week15/week-15-live-2.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week16/learnTurboRepo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week16/next-auth" vcs="Git" />
+  </component>
+</project>

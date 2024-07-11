@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>windowListener</title>
+</head>
+<body>
+<h1>This is a tutorial to how to add listeners to window size change</h1>
+<h2>Try to change the size of the window, and you will see random number in the below paragraph element</h2>
+<p id="para">123456</p>
+<script>
+    window.addEventListener("resize", function (){
+        document.getElementById("para").innerHTML = Math.floor(Math.random()*10000000)
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute</title>
+</head>
+<body>
+<h1>Using element.attribute to change attribute of element tag of the html</h1>
+<img id="box" src="" alt="landscape">
+<button onclick="buildBox()">Click Me!</button>
+<script>
+    function buildBox(){
+        const box = document.getElementById("box")
+        box.src = "neom.jpg"
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inner HTML</title>
+</head>
+<body>
+<!--element.innerHTML is used to change the inner HTML of an element-->
+<h1>Showcasing the use of the element.innerHTML</h1>
+<p id="demo">this paragraph inner html is used to going to change on button click.</p>
+<button id="button" onclick="changeText()">Click me!</button>
+<script>
+    function changeText(){
+        document.getElementById("demo").innerHTML = "Hello world, I have change the text"
+    }
+</script>
+</body>
+</html>

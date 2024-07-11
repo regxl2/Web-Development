@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style</title>
+</head>
+<body>
+<h1>Using element.style to change to style of an HTML element</h1>
+<p>Below box will appear on clicking the button.</p>
+<div id="box"></div>
+<button onclick="buildBox()">Click Me!</button>
+<script>
+    function buildBox(){
+        const box = document.getElementById("box")
+        // element.style.property is used to change the style of an HTML element
+        box.style.height = "100px"
+        box.style.width  = "100px"
+        box.style.backgroundColor = "red"
+        box.style.border = "2px solid black"
+    }
+</script>
+</body>
+</html>

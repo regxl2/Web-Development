@@ -1,0 +1,5 @@
+Until now, we've been storing data in memory.
+This is bad for a few reasons-
+1. Data can't be dynamic, if you update in memory objects,
+   the updates are lost if the process restarts.
+2. There are multiple servers in the real world.

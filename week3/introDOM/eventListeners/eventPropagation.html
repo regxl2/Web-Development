@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Propagation</title>
+    <style>
+        #myDiv1, #myDiv2{
+            height: 200px;
+            background-color: #1bbcfa;
+        }
+        #myP1, #myP2{
+            background-color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="myDiv1">
+    <h2>Bubbling:</h2>
+    <p id="myP1">Click me!</p>
+</div><br>
+<div id="myDiv2">
+    <h2>capturing:</h2>
+    <p id="myP2">Click me!</p>
+</div><br>
+<script>
+    // Event Bubbling or Event Capturing?
+    //     Two ways of propagation in the HTML DOM - bubbling and capturing.
+    //     In bubbling, the innermost element's event is handled first and then the outer.
+    //     In capturing, the outermost element's event is handled first and then inner.
+    //     addEventListener(event, function, useCapture) by default the useCapture value is false,
+    //     which means bubbling is the default.
+    document.getElementById("myDiv1").addEventListener("click",()=>{
+        alert("hello world from bubbling div")
+    }, false)
+    document.getElementById("myP1").addEventListener("click", ()=>{
+        alert("hello world from bubbling paragraph")
+    }, false)
+    document.getElementById("myDiv2").addEventListener("click", ()=>{
+        alert("hello world from capturing div")
+    }, true)
+    document.getElementById("myP2").addEventListener("click", ()=>{
+        alert("Hello world from capturing paragraph")
+    }, true)
+</script>
+</body>
+</html>

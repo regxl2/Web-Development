@@ -1,0 +1,75 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+@keyframes colorAnimate {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+#box1:hover {
+    animation-name: colorAnimate;
+    animation-delay: 1000ms;
+    animation-duration: 25ms;
+    animation-iteration-count: infinite;
+    /*iteration-count is used to make how many times animation will repeat*/
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes positionAnimate {
+    from {
+        transform:translateX(0px);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+#box2{
+    animation-name: positionAnimate;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*alternate value means animation will happens from {from -> to state} then {to -> from state}*/
+    /*You can also write animation property in shorthand format*/
+}
+
+/*control animation on its progression*/
+@keyframes progressAnimation {
+    0%{
+        background-color: #1bbcfa;
+    }
+    50%{
+        background-color: lime;
+    }
+    100%{
+        background-color: yellow;
+    }
+
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateY(100px);
+    }
+}
+
+#box3{
+    animation-name: progressAnimation;
+    animation-delay: 100ms;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+

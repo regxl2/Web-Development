@@ -1,0 +1,42 @@
+#para1{
+    /*if text align value is right then value then text will be aligned to right*/
+    text-align: right;
+
+    /*this property is used to decorate like making text underline , overline, line-through and etc. (cutting the text)*/
+    text-decoration: red solid underline;
+}
+
+/*font-weight tells how much the text is lighter and bolder*/
+/*we can also use numeric values in the font-weight its value range from 100 to 900*/
+/*100 value means text is lighter and value 900 means text is bolder.*/
+#id1{
+    font-weight: lighter;
+}
+#id2{
+    font-weight: normal;
+}
+#id3{
+    font-weight: bold;
+}
+#id4{
+    font-weight: bolder;
+}
+
+/*font-family is used to set the style of the text and how it appears.*/
+/*we write multiple font separated by commma because if one font is not */
+/*supported by certain browser then other will might be supported.*/
+/*Priority of font is from left to right, if left most is supported by the browser then */
+/*then it will be used by the browser for styling the text.*/
+#para2{
+    font-family: "Arial", "Segoe UI", serif;
+    text-transform: capitalize;
+}
+
+
+/*text transform property is used make all words in the text to lowercase or uppercase or capitalize or */
+/*if you have already applied the text-transform property to the text to invalidate the text-tranform*/
+/*property. we can set text-tranform value to none.*/
+
+#para3{
+    text-transform: uppercase;
+}

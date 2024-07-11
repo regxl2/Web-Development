@@ -1,0 +1,20 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+#box1{
+    transform: rotate(90deg);
+    /*by transform : rotate(90deg) it will rotate the the box by 90 degree*/
+}
+#box2{
+    transform: rotateX(45deg);
+    /*It better works with 3d object*/
+}
+#box3{
+    transform: rotateY(45deg);
+}
+#box4{
+    transform: rotateZ(45deg);
+}

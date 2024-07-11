@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<!--Forms are used to collect data from the user.-->
+<!--For example - signup/ login/ help requests/ contact me-->
+<!--action attribute is used to define what action needs to be-->
+<!--performed when a form is submitted-->
+<h3>Please enter your credentials:</h3>
+<form action="action.js">
+    <!--    Label tag is really helpful for visually impaired/screen reader guys.-->
+    <!--    It will tell them what is drawn on the screen-->
+    <label for="username">
+        <input id="username" type="text" placeholder="username">
+    </label>
+    <br/>
+    <br/>
+    <label for="password">
+        <input id="password" type="password" placeholder="password">
+    </label>
+    <br/>
+    <br/>
+
+    <h3>Please select your class:</h3>
+    <label for="classNine">
+        <input id="classNine" type="radio" name="class" value="class IX"> class IX
+    </label>
+    <br/>
+    <label for="classTen">
+        <input id="classTen" type="radio" name="class" value="class X"> class X
+    </label>
+    <!--    By making both radio inputs of the same name. It will make sure only one will-->
+    <!--    be selected at a time if they are of a different name type then, they will-->
+    <!--    be selected at the same time.-->
+
+    <h3>Please select your favourite subjects:</h3>
+    <label for="physics">
+        <input id="physics" type="checkbox" value="Physics">Physics
+    </label>
+    <br>
+    <br>
+    <label for="chemistry">
+        <input id="chemistry" type="checkbox" value="chemistry">Chemistry
+    </label>
+    <br>
+    <br>
+    <label for="maths">
+        <input id="maths" type="checkbox" value="maths">Maths
+    </label>
+    <br>
+    <br>
+
+    <!--    textarea tag is similar to the input text, but this tag is usually used for taking -->
+    <!--    feedback from the user-->
+    <h3>Feedback:</h3>
+    <label for="feedback">
+        <textarea id="feedback" name="feedback" placeholder="Please give your valuable feedback."></textarea>
+    </label>
+    <br>
+    <br>
+
+<!--    for dropdown selection, we use select tag-->
+    <h3>Please select your city:</h3>
+    <label for ="city">
+        <select id= "city" name = "city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Kanpur">Kanpur</option>
+        </select>
+    </label>
+    <br>
+    <br>
+
+<!--    input submit is used to submit our form and trigger action attribute-->
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

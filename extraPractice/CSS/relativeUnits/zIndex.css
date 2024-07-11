@@ -1,0 +1,33 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: #1bbcfa;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    position: absolute;
+    z-index: -1;
+    top:10px;
+    left:10px;
+}
+#box2{
+    position: absolute;
+    z-index: 0;
+    top:20px;
+    left:20px;
+}
+#box3{
+    position: absolute;
+    z-index: 1;
+    top:30px;
+    left:30px;
+}
+#box4{
+    position: absolute;
+    z-index: 2;
+    top:40px;
+    left:40px;
+}
+
+/*by using z-index you can stack the box on top of each other*/

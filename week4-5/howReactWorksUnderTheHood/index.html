@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How React works under the hood</title>
+</head>
+<body>
+<div id="buttonParent">
+    <script>
+        let state ={
+            count: 0
+        }
+        function onButtonPress(){
+            state.count++
+            buttonComponentReRender()
+        }
+        function buttonComponentReRender(){
+            const parent = document.getElementById("buttonParent")
+            parent.innerHTML = ""
+            const button = buttonComponent(state.count)
+            parent.appendChild(button)
+        }
+        function buttonComponent(count){
+            const button = document.createElement("button")
+            button.innerHTML = `Counter ${count}`
+            button.setAttribute("onclick", "onButtonPress()")
+            return button
+        }
+        buttonComponentReRender()
+
+        // This is just a simulation of how React works under the hood.
+        // In React, to make the same button press counter, you only need to
+        // write the onButtonPress() and buttonComponent() function only, there is no
+        // need to write the buttonComponentReRender() function it will implicitly implement by the React.
+    </script>
+</div>
+</body>
+</html>

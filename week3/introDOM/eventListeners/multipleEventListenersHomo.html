@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Event Listeners</title>
+</head>
+<body>
+<h1>This is a tutorial, how to add multiple listeners to an element</h1>
+<h2>Try to click on the button and you will see multiple alert</h2>
+<button id="button">Try</button>
+<script>
+    const button = document.getElementById("button")
+    button.addEventListener("click", ()=>{
+        alert("Hello world1")
+    })
+    button.addEventListener("click", ()=>{
+        alert("Hello world2")
+    })
+</script>
+</body>
+</html>

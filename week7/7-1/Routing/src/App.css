@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 80px;
+    background-color: #387ed1;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+#nav-list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+#nav-list li{
+    font-size: 20px;
+    color: #eeeeee;
+    margin-left: 20px;
+}
+#nav-list li:hover{
+    cursor: pointer;
+}

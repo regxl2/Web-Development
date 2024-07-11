@@ -1,0 +1,50 @@
+#container{
+    height: 50vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /*making a container flex then flex item will not flow outside*/
+    /*the flex container until the sum of text font size of all flex item */
+    /*exceeds the height/width of the flex container.*/
+    justify-content: space-evenly;
+    /*justify-content will work along the main axis*/
+    align-items: center;
+    flex-wrap: wrap;
+    /*flex-wrap: wrap is very helpful in reponsive layout. If we decrease the width*/
+    /*of the screen then the box in the container will start coming in the another line*/
+    /*to maintain its size.*/
+}
+.contentBox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+#box1{
+    background-color: red;
+    flex-grow: 2;
+    /*flex-grow will decide at how much rate the item will grow  as compared*/
+    /*to sibling items if the space is available*/
+}
+#box2{
+    background-color: blue;
+    flex-grow: 1;
+    /*flex-shrink will decide at how much rate the item will shrink as compared */
+    /*to sibling items if the space is available*/
+}
+#box3{
+    background-color: green;
+    flex-grow: 1;
+    flex-shrink: 0.5;
+    align-self: flex-end;
+    /*align-self is used to individually align the item and it has the highest priority */
+    /*in terms of alignment as compared to align-items applied to its parent container.*/
+}
+#box4{
+    background-color: purple;
+    flex-grow: 1;
+}
+#box5{
+    background-color: pink;
+    flex-grow: 1;
+}

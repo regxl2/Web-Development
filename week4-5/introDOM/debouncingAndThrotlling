@@ -1,0 +1,25 @@
+Debouncing:
+
+     Definition:
+     Debouncing is a technique used to ensure that time-consuming tasks do not fire so often,
+     making sure they only execute after a certain amount of time has passed since the last invocation of the function.
+
+     Use Case:
+     Commonly applied to events such as user input (e.g., keystrokes), where you want to wait
+     for a pause in the input before triggering an action, such as making an API request or updating the UI.
+
+Throttling:
+     Definition:
+     Throttling is a technique used to ensure that a function is not executed more than once
+     in a specified amount of time, regardless of how many times it is called.
+
+     Use Case:
+     Throttling is useful when you want to limit the rate at which a function can be invoked,
+     for example, in scenarios like handling scroll events or mouse movements to prevent a function
+     from being called too frequently.
+
+
+Debouncing is often used for scenarios where you want to wait for a quiet period before taking action,
+while throttling is used to control the rate of execution of a function.
+Both are basically same thing if we do it on frontend side it is called debouncing and if we are doing this on 
+backend side then it is called throttling.
